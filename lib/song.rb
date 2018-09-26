@@ -37,7 +37,7 @@ class Song
     self.all.detect {|i| i.name == string_name_of_the_song}
   end
 
-  def Song.find_or_create_by_name(find_this_song)
+  def Song.find_or_create_by_name("Blank Space")
     # This method will accept a string name for a song and
     # either return a matching song instance with that name
     # or create a new song with the name and return the song instance.
