@@ -36,7 +36,7 @@ class Song
     # the matching instance of the song with that name.
     self.all.detect {|i| i.name == string_name_of_the_song}
   end
-
+end
   def self.find_or_create_by_name(name)
   if @@all.include?(name)
     @@all.find { |song| song.name == name }
